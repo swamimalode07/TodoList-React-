@@ -1,0 +1,144 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  /* Todo list container */
+  div {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field */
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border 0.3s;
+  }
+  
+  input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  /* Add Task button */
+  button {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5752d1;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Task styling (done/undone) */
+  span {
+    flex-grow: 1;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  span[style*="line-through"] {
+    color: #888;
+    text-decoration: line-through;
+  }
+  
+  /* Button group styling */
+  button + button {
+    margin-left: 10px;
+  }
+  
+  /* Convert to uppercase button */
+  button:nth-child(4) {
+    background-color: #4CAF50;
+  }
+  
+  button:nth-child(4):hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    div {
+      padding: 15px;
+    }
+  
+    h4 {
+      font-size: 20px;
+    }
+  
+    input,
+    button {
+      font-size: 14px;
+    }
+  
+    li {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    button + button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
